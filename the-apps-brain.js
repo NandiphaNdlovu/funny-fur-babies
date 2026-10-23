@@ -9,6 +9,7 @@ function checkCredentials() {
   if (userInput === correctUser && passInput === correctPass) {
     messageEl.style.color = "green";
     messageEl.innerText = "Login successful!";
+    sessionStorage.setItem("loggedIn", "true");
     window.location.href = "home.html";
   } else {
     messageEl.style.color = "red";

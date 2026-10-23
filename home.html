@@ -9,6 +9,12 @@
       rel="stylesheet"
     />
     <link href="style.css" rel="stylesheet" />
+    <script>
+      // Send anyone who hasn't logged in back to the login page
+      if (sessionStorage.getItem("loggedIn") !== "true") {
+        window.location.replace("login.html");
+      }
+    </script>
     <script src="the-apps-brain.js" defer></script>
   </head>
   <body class="d-flex flex-column min-vh-100">
