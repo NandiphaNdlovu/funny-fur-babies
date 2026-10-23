@@ -38,3 +38,19 @@ body {
   background: #6b2e31;
   color: #f7edee;
 }
+.navbar-background {
+  background: #f0dbdc;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+footer {
+  background-color: #343a40;
+  padding: 3rem 0;
+}
+
+.social-icons a {
+  font-size: 1.25rem;
+  color: #471f21;
+}
