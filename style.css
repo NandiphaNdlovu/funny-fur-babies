@@ -1,0 +1,40 @@
+body {
+  min-height: 100dvh;
+  color: #471f21 !important;
+}
+
+.card {
+  width: 22rem;
+  background: #f0dbdc;
+  box-shadow: 0 0 1em #6b2e31a2;
+}
+
+.card-img {
+  height: 180px;
+  object-fit: cover;
+}
+body {
+  min-height: 100dvh;
+  color: #471f21 !important;
+}
+
+.card {
+  width: 22rem;
+  background: #f0dbdc;
+  box-shadow: 0 0 1em #6b2e31a2;
+}
+
+.card-img {
+  height: 180px;
+  object-fit: cover;
+}
+
+.button-light {
+  background: #8f3d41;
+  color: #f7edee;
+}
+
+.button-light:hover {
+  background: #6b2e31;
+  color: #f7edee;
+}
