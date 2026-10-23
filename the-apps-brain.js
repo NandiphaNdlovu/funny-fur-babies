@@ -21,32 +21,32 @@ function checkCredentials() {
 const cardDetails = [
   {
     id: 1,
-    imgSrc: "/image/image-1.jpg",
+    imgSrc: "image/image-1.jpg",
     title: "Biscuit",
   },
   {
     id: 2,
-    imgSrc: "/image/image-2.jpg",
+    imgSrc: "image/image-2.jpg",
     title: "Luna",
   },
   {
     id: 3,
-    imgSrc: "/image/image-3.jpg",
+    imgSrc: "image/image-3.jpg",
     title: "Pebble",
   },
   {
     id: 4,
-    imgSrc: "/image/image-4.jpg",
+    imgSrc: "image/image-4.jpg",
     title: "Churro",
   },
   {
     id: 5,
-    imgSrc: "/image/image-5.jpg",
+    imgSrc: "image/image-5.jpg",
     title: "Nugget",
   },
   {
     id: 6,
-    imgSrc: "/image/image-6.jpg",
+    imgSrc: "image/image-6.jpg",
     title: "Bean",
   },
 ];
