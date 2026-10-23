@@ -9,6 +9,7 @@
       rel="stylesheet"
     />
     <link href="style.css" rel="stylesheet" />
+    <script src="the-apps-brain.js" defer></script>
   </head>
   <body class="bg-light">
     <div
@@ -45,7 +46,14 @@
               />
             </div>
 
-            <a href="home.html" class="btn button-light w-100">Login</a>
+            <button
+              type="button"
+              class="btn button-light w-100"
+              onclick="checkCredentials()"
+            >
+              Login
+            </button>
+            <p id="message"></p>
           </form>
         </div>
       </div>

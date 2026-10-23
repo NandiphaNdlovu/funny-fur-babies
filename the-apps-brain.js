@@ -1,3 +1,21 @@
+function checkCredentials() {
+  const correctUser = "admin";
+  const correctPass = "12345";
+
+  const userInput = document.getElementById("username").value;
+  const passInput = document.getElementById("password").value;
+  const messageEl = document.getElementById("message");
+
+  if (userInput === correctUser && passInput === correctPass) {
+    messageEl.style.color = "green";
+    messageEl.innerText = "Login successful!";
+    window.location.href = "home.html";
+  } else {
+    messageEl.style.color = "red";
+    messageEl.innerText = "Incorrect username or password.";
+  }
+}
+
 // https://icanhazdadjoke.com/
 
 const cardDetails = [
@@ -34,7 +52,9 @@ const cardDetails = [
 ];
 const cardDetailContainer = document.getElementById("card-details");
 
-cardDetailContainer.innerHTML = cardDetails
+// The login page shares this script but has no card container
+if (cardDetailContainer) {
+  cardDetailContainer.innerHTML = cardDetails
   .map((cardDetail) => {
     return `
     <div class="col-sm">
@@ -56,6 +76,7 @@ cardDetailContainer.innerHTML = cardDetails
     `;
   })
   .join("");
+}
 
 async function getPickUpLine(id) {
   const theCardText = document.getElementById(`the-line-${id}`);
